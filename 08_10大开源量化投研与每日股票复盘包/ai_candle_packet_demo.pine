@@ -1,0 +1,38 @@
+// This Pine Script™ v5 template is for educational & data-structuring research only (NOT financial advice).
+// Purpose: Convert objective closed-candle technical metrics into a clean JSON packet for LLM structured analysis.
+//@version=5
+indicator("AI Agent Candle JSON Packet (Research Demo)", overlay=true)
+
+emaFast = ta.ema(close, 20)
+emaSlow = ta.ema(close, 50)
+rsiVal  = ta.rsi(close, 14)
+atrVal  = ta.atr(14)
+volSma  = ta.sma(volume, 20)
+volRatio = volSma > 0 ? volume / volSma : 1.0
+swingHi = ta.highest(high, 20)[1]
+swingLo = ta.lowest(low, 20)[1]
+
+regime = emaFast > emaSlow and close > emaFast ? "BULL_TREND" : emaFast < emaSlow and close < emaFast ? "BEAR_TREND" : "RANGE_CHOP"
+
+buildJson() =>
+    "{" +
+      "\"symbol\":\"" + syminfo.ticker + "\"," +
+      "\"tf\":\"" + timeframe.period + "\"," +
+      "\"close\":" + str.tostring(close, "#.####") + "," +
+      "\"regime\":\"" + regime + "\"," +
+      "\"ema20\":" + str.tostring(emaFast, "#.####") + "," +
+      "\"ema50\":" + str.tostring(emaSlow, "#.####") + "," +
+      "\"rsi14\":" + str.tostring(rsiVal, "#.##") + "," +
+      "\"atr14\":" + str.tostring(atrVal, "#.####") + "," +
+      "\"vol_x\":" + str.tostring(volRatio, "#.##") + "," +
+      "\"prev20_high\":" + str.tostring(swingHi, "#.####") + "," +
+      "\"prev20_low\":" + str.tostring(swingLo, "#.####") +
+    "}"
+
+var table panel = table.new(position.top_right, 1, 2, border_width=1)
+if barstate.islastconfirmedhistory or barstate.islast
+    jsonStr = buildJson()
+    table.cell(panel, 0, 0, "Closed-Candle JSON Packet (Copy to LLM)", text_color=color.white, bgcolor=color.new(color.black, 15), text_size=size.small)
+    table.cell(panel, 0, 1, jsonStr, text_color=color.rgb(180, 245, 210), bgcolor=color.new(color.black, 10), text_size=size.tiny)
+    if barstate.isconfirmed
+        alert(jsonStr, alert.freq_once_per_bar_close)
