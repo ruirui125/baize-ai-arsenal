@@ -13,6 +13,7 @@
 | **[`02_免改源码断点MCP与审代码神器/`](./02_免改源码断点MCP与审代码神器/README.md)** | `调试神器` | `ChromeDevTools/chrome-devtools-mcp v1.13.0`（★57.2k 免改源码动态打日志断点 Logpoints / 故障注入 / 本地 Mock 覆盖）+ 阿里 `alibaba/open-code-review`（★52.4k 省 9 倍 Token 审代码）+ 零大模型确定性 PR 自动推进状态机 |
 | **[`03_AI防删稿与密钥零明文保命锁/`](./03_AI防删稿与密钥零明文保命锁/README.md)** | `保命锁` | 针对“教授被删整年讲义”与 `#107757` 邮箱泄露事件：**`safe-rm-guard.sh` 防误删转回收站脚本 + Claude Code `PreToolUse` 护栏 Hook + API Key 零明文隔离 + `secretlint` 3 分钟自查模板** + 3 美元修 32 年老吉普 `xj-scanner` 档案 |
 | **[`04_AI漫剧短剧防穿帮与分镜模板/`](./04_AI漫剧短剧防穿帮与分镜模板/README.md)** | `短剧分镜` | 千集 AI 短剧实战：**角色全身定妆防穿帮锁死表（含鞋靴/持物左右手/出画朝向）+ `Seedance 2.5` 保五官长镜头万能 Prompt 公式 + 前片终态快照无缝接续 SOP** |
+| **[`05_指挥Agent最爱用的10条元指令/`](./05_指挥Agent最爱用的10条元指令/README.md)** | `十条指令` | 上万轮真实对话沉淀：**4 大阶段 10 句高阶 Agent 指挥元指令（第一性原理 / 质疑伪需求 / 二三阶推演 / 红队拆台 / Git 考古 / 返工转 Skill）+ `#L1~#L10` 一键粘贴 `CLAUDE.md` 配置块 + 黑金/米白双色高清手机锁屏速查壁纸** |
 | **姊妹完整案例专仓** | `Fable源码` | **[`ruirui125/claude-fable-code-video`](https://github.com/ruirui125/claude-fable-code-video)**：209 个纯代码直出 1080p 有声科普视频案例、分镜骨架与无丢帧渲染引擎 |
 
 ---
