@@ -25,6 +25,7 @@
 | **[`14_NotebookLM一句话建站与20美金AI订阅避坑全案/`](./14_NotebookLM一句话建站与20美金AI订阅避坑全案/README.md)** | `一句话建站` | **Google NotebookLM `"make me a site"` 10 套客户汇报/产品手册/期末复习全中文建站口令** + **每月 20 美金 AI 订阅防当冤大头省钱对照表** |
 | **[`15_家庭职场防AI偷看隐私与越界12条安全锦囊/`](./15_家庭职场防AI偷看隐私与越界12条安全锦囊/README.md)** | `防越界` | **普通人使用自动助手「三不交」铁律** + **5 分钟给手机与电脑关掉高危隐私敞口的 12 条零技术门槛设置锦囊** |
 | **[`16_Claude三层验证闭环与Poteto倒金字塔门禁包/`](./16_Claude三层验证闭环与Poteto倒金字塔门禁包/README.md)** | `验证门禁` | **Anthropic Claude Code 团队三层验证闭环（`E2E + Property + Differential`）+ Grok Bot 主程 Poteto 五层倒金字塔排障自检单与一键改造指令** |
+| **[`17_Windows老电脑无弹窗纯净提速安全勾法清单/`](./17_Windows老电脑无弹窗纯净提速安全勾法清单/README.md)** | `纯净提速` | **GitHub 日榜第一 `itsfatduck/optimizerDuck v2.29.0` 实机拆测：办公电脑零翻车 5 项绿牌必勾单 + 误伤打印机/内网盘的 240 项红牌服务避坑清单 + 不装软件的系统自带 3 分钟减负步骤** |
 | **姊妹完整案例专仓** | `Fable源码` | **[`ruirui125/claude-fable-code-video`](https://github.com/ruirui125/claude-fable-code-video)**：209 个纯代码直出 1080p 有声科普视频案例、分镜骨架与无丢帧渲染引擎 |
 
 ---
